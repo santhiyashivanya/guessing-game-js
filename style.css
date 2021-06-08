@@ -1,0 +1,104 @@
+* {
+    margin: 4px;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: alias;
+}
+
+
+body {
+    background-image: url(http://bit-player.org/wp-content/uploads/2011/12/hst-bright-stars-in-lmc-450.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: -9999;
+}
+
+.result {
+    border:1px solid black;
+    border-radius: 10px;
+    background: rgb(255, 255, 255) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.result * {
+    padding: 8px;
+} 
+
+.history {
+    border: 5px solid black;
+    border-radius: 5px;
+    background: rgb(201, 247, 141);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+
+}
+
+
+#wrapper {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+button {
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green */
+
+    
+}
+
+.label {
+    color: white;
+    font-size: 1.5rem;
+}
+
+input {
+    border-radius: 50px;
+    padding: 1px;
+    cursor: text;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.heading{
+    font-size: 2rem;
+    font-family: monospace;
+} 
+
+
+ 
